@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KMI skaičiuoklė</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="kortele">
+    <h1>KMI skaičiuoklė</h1>
+    <form id="forma" novalidate>
+      <label for="svoris">Svoris (kg)</label>
+      <input id="svoris" type="number" step="any" inputmode="decimal" placeholder="pvz. 70">
+      <label for="ugis">Ūgis (cm)</label>
+      <input id="ugis" type="number" step="any" inputmode="decimal" placeholder="pvz. 175">
+      <button type="submit">Skaičiuoti</button>
+    </form>
+    <div id="rezultatas" aria-live="polite"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
